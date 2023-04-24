@@ -1,0 +1,664 @@
+@charset "utf-8";      
+
+        * {margin:0; box-sizing: border-box;}
+        ul, li, ol {list-style:none; margin:0; padding:0;}
+        
+        /*헤더*/
+        header { width: 100%; height: 152px; margin: 0 auto;}
+        #headertop { width:1240px;height:95px; margin:0 auto; }
+        
+         /*로고*/
+        #logo {width: 210px;height: 48px;float: left; margin: 30px 0 30px 0; }
+        #logo > a > img { width: 190px;height: 48px;}
+        
+        /*검색*/
+        #search  {width: 420px;height: 48px; border-radius: 20px;  margin: 30px 0 30px 0; float: left; }
+        #search > button { width: 28px; height: 28px; border-radius:60%; border:none; margin:10px 0 0 0; cursor:pointer;} 
+        #search > button > img { width: 28px; height: 28px;}
+        #search > input {float: left; margin: 10px 0 0 2px; border-radius:30px; height:30px; width:200px;
+        border:1px solid rgb(100, 111, 124);}
+        
+        /*카테고리, 쇼핑*/
+        #category { width: 70px;height: 55px;float: left; margin: 30px 0 0 460px;text-align: center; }
+        #category > a > img { width: 36px;height: 36px; margin:3px 0 0 0; }
+        #showping {width: 50px; height: 55px;float: right; margin: 30px 30px 0 0;text-align: center; }
+        #showping > a > img { width: 36px; height: 36px;margin: 5px 0 0 0; }
+        
+        /*라인*/
+        #line { width: 100%; height: 1px; background-color:rgba(47, 47, 47); }
+        
+        /*헤드 바텀*/
+        #headerbottom {width:1240px; height:56px; margin:1px auto; }
+        #headerbottom > nav {width:400px; height:56px; }
+        #headerbottom > nav > ul {width:100%; height:100%;display:flex; justify-content:space-evenly;}
+        #headerbottom > nav > ul > li {font-weight:bold;}
+        #headerbottom > nav > ul > li > a {text-decoration:none; color:#000; font-size:17px; font-weight:bold;}
+        #headerbottom > nav > ul > li > a:hover {color:tomato;}
+        
+        /*네비게이션 헤드*/
+        .navhead {cursor:pointer;}
+        .navhead > img {width:24px; height:24px; float:left; cursor:pointer;}
+        #menu {float:left;margin:3px 10px 0 0; font-weight:bold; color:#000; cursor:pointer; width:70px; position:relative;}
+        #category-main {display:none; background-color:rgb(255, 255, 255); height:700px; box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; z-index:1000; width:170px; position:absolute; left:-20px; top:41px;}
+        #category-main > li {height:55px; padding:5px 0px; font-size:15px; line-height:20px; display:flex; align-items:center; position:relative; color:#2f2f2f;}
+        #category-main > li:hover {color:tomato;}
+        #category-main > li > img {width:50px; height:37.5px;}
+        #category-main > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:hover > .arrow {display:inline-block;}
+
+        /*카테고리 메인 - 가구*/
+        #category-main > li:first-child > .gagu {width:190px; height:700px; display:none; position:absolute; top:0px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 가구 > 침대/메트리스*/
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:hover > .arrow{display:inline-block;}
+        
+        /*카테고리-메인 - 가구 > 침대/메트리스 > 침대*/
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:first-child > .chimda {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:first-child > .chimda > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:first-child > .chimda > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가구 > 침대/메트리스 > 매트리스*/
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:last-child > .matris {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:last-child > .matris > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:first-child > .chimda-and-matris > li:last-child > .matris > li:hover {color:tomato;}
+ 
+
+
+        /*카테고리-메인 - 가구 > 소파*/
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 가구 > 소파 > 가죽소파*/
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:first-child > .gajuksopa {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:first-child > .gajuksopa > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:first-child > .gajuksopa > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가구 > 소파 > 패브릭소파*/
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:nth-child(2) > .pabricsopa {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:nth-child(2) > .pabricsopa > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:nth-child(2) > .pabricsopa > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가구 > 소파 > 신소재소파*/
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:nth-child(3) > .sinsojasopa {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:nth-child(3) > .sinsojasopa > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(2) > .sopa > li:nth-child(3) > .sinsojasopa > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 가구 > 테이블*/
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table> li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table > li:hover > .arrow{display:inline-block;}
+        
+        /*카테고리-메인 - 가구 > 테이블 > 협탁/사이드테이블*/
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table > li:nth-child(3) > .narrowtable {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table > li:nth-child(3) > .narrowtable > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(3) > .table > li:nth-child(3) > .narrowtable > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가구 > 화장대/거울*/
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 가구 > 화장대/거울 > 화장대*/
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:first-child > .makeuptable {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:first-child > .makeuptable > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:first-child > .makeuptable > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 가구 > 화장대/거울 > 거울*/
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:last-child > .mirror {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:last-child > .mirror > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(4) > .makeup > li:last-child > .mirror > li:hover {color:tomato;}
+        
+        /*카테고리-메인 - 가구 > 드레스룸*/
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress {width:190px; height:700px; display:none; position:absolute; top:-227px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 가구 > 드레스룸 > 행거*/
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress > li:nth-child(2) > .dress-hanger {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress > li:nth-child(2) > .dress-hanger > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(5) > .dress > li:nth-child(2) > .dress-hanger > li:hover {color:tomato;}
+        
+        /*카테고리-메인 - 가구 > 거실장/서랍장/선반*/
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master {width:190px; height:700px; display:none; position:absolute; top:-282px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 가구 > 거실장/서랍장/선반 > 선반*/
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master > li:nth-child(6) > .sunban {width:190px; height:700px; display:none; position:absolute; top:-282px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master > li:nth-child(6) > .sunban > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(6) > .room-master > li:nth-child(6) > .sunban > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 가구 > 식탁/주방수납*/
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen {width:190px; height:700px; display:none; position:absolute; top:-337px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 가구 > 식탁/주방수납 > 식탁*/
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen > li:first-child > .sictac {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen > li:first-child > .sictac > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(7) > .kitchen > li:first-child > .sictac > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가구 > 책상/책장*/
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study {width:190px; height:700px; display:none; position:absolute; top:-392px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study > li:hover {color:tomato;}
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 가구 > 책상/책장 > 책상*/
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study > li:first-child > .booktable {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study > li:first-child > .booktable > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(8) > .study > li:first-child > .booktable > li:hover {color:tomato;}
+
+        
+        /*카테고리-메인 - 가구 > 의자*/
+        #category-main > li:first-child > .gagu > li:nth-child(9) > .chair {width:190px; height:700px; display:none; position:absolute; top:-447px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:nth-child(9) > .chair > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:nth-child(9) > .chair > li:hover {color:tomato;}
+        
+ 
+        /*카테고리-메인 - 가구 > 유아/아동가구*/
+        #category-main > li:first-child > .gagu > li:last-child > .baby {width:190px; height:700px; display:none; position:absolute; top:-502px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:first-child > .gagu > li:last-child > .baby > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:first-child > .gagu > li:last-child > .baby > li:hover {color:tomato;}
+        
+
+
+        /*카테고리 메인 - 패브릭*/
+        #category-main > li:nth-child(2) > .pabric {width:190px; height:700px; display:none; position:absolute; top:-55px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:hover {color:tomato;}
+        #category-main > li:nth-child(2) > .pabric > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(2) > .pabric > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리 메인 - 패브릭 > 침구*/
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:hover {color:tomato;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li >  .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:hover > .arrow {display:inline-block;}
+
+        /*카테고리 메인 - 패브릭 > 침구 > 침구세트*/
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:first-child > .chimguset{width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:first-child > .chimguset > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:first-child > .chimguset > li:hover {color:tomato;}
+
+        /*카테고리 메인 - 패브릭 > 침구 > 침구단품*/
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(2) > .chimgudanpum{width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(2) > .chimgudanpum > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(2) > .chimgudanpum > li:hover {color:tomato;}
+
+        /*카테고리 메인 - 패브릭 > 침구 > 이불송/이불커버*/
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(3) > .blanket{width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(3) > .blanket > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(3) > .blanket > li:hover {color:tomato;}
+
+        /*카테고리 메인 - 패브릭 > 침구 > 베게솜/베게커버*/
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(4) > .backcover{width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(4) > .backcover > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(4) > .backcover > li:hover {color:tomato;}
+
+        /*카테고리 메인 - 패브릭 > 침구 > 바디필로우/롱쿠션*/
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(5) > .bodyfilrow{width:190px; height:700px; display:none; position:absolute; top:-227px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(5)> .bodyfilrow > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:first-child > .chimgu > li:nth-child(5) > .bodyfilrow > li:hover {color:tomato;}
+
+        /*카테고리 메인 - 패브릭 > 커튼/블라인드*/
+        #category-main > li:nth-child(2) > .pabric > li:nth-child(2) > .curtain-and-bilnd {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:nth-child(2) > .curtain-and-bilnd > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:nth-child(2) > .curtain-and-bilnd > li:hover {color:tomato;}
+
+
+        /*카테고리 메인 - 패브릭 > 카페트/러그/매트*/
+        #category-main > li:nth-child(2) > .pabric > li:nth-child(3) > .carpet {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:nth-child(3) > .carpet > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:nth-child(3) > .carpet > li:hover {color:tomato;}
+
+
+        /*카테고리 메인 - 패브릭 > 패브릭소품*/
+        #category-main > li:nth-child(2) > .pabric > li:last-child > .props {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(2) > .pabric > li:last-child > .props > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(2) > .pabric > li:last-child > .props > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 주방*/
+        #category-main > li:nth-child(3) > .jubang {width:190px; height:700px; display:none; position:absolute; top:-110px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:hover {color:tomato;}
+        #category-main > li:nth-child(3) > .jubang > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(3) > .jubang > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 주방 > 그릇/식기*/
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi > li:hover {color:tomato;}
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 주방 > 그릇/식기 > 홈세트*/
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi > li:first-child > .homeset {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi > li:first-child > .homeset > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:first-child > .sicgi > li:first-child > .homeset > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 주방 > 수저/커트러리*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(2) > .sujeo {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(2) > .sujeo > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(2) > .sujeo > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 주방 > 컵/잔/텀블러*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(3) > .cup {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(3) > .cup > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(3) > .cup > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 주방 > 냄비/프라이팬*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi > li:hover {color:tomato;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 주방 > 냄비/프라이팬* > 인덕션용*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi > li:first-child > .indogseon {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi > li:first-child > .indogseon > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(4) > .nambi > li:first-child > .indogseon > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 주방 > 조리도구*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(5) > .jori{width:190px; height:700px; display:none; position:absolute; top:-227px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(5) > .jori > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(5) > .jori > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 주방 > 보관/용기*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(6) > .boghan {width:190px; height:700px; display:none; position:absolute; top:-282px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(6) > .boghan > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(6) > .boghan > li:hover {color:tomato;}
+
+
+
+        /*카테고리-메인 - 주방 > 식기건조대*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(7) > .sicgitower {width:190px; height:700px; display:none; position:absolute; top:-337px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(7) > .sicgitower > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(7) > .sicgitower > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 주방 > 주방수납/정리*/
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(8) > .kitchenstorage {width:190px; height:700px; display:none; position:absolute; top:-392px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(8) > .kitchenstorage > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:nth-child(8) > .kitchenstorage > li:hover {color:tomato;}
+
+        
+        /*카테고리-메인 - 주방 > 주방잡화*/
+        #category-main > li:nth-child(3) > .jubang > li:last-child > .goods {width:190px; height:700px; display:none; position:absolute; top:-447px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(3) > .jubang > li:last-child > .goods > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(3) > .jubang > li:last-child > .goods > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 수납/정리*/
+        #category-main > li:nth-child(4) > .sunab {width:190px; height:700px; display:none; position:absolute; top:-165px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(4) > .sunab > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(4) > .sunab > li:hover {color:tomato;}
+        #category-main > li:nth-child(4) > .sunab > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(4) > .sunab > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 수납/정리 > 리빙박스/수납함*/
+        #category-main > li:nth-child(4) > .sunab > li:first-child > .ribingbox {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(4) > .sunab > li:first-child > .ribingbox > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(4) > .sunab > li:first-child > .ribingbox > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 수납/정리 > 옷걸이/옷정리*/
+        #category-main > li:nth-child(4) > .sunab > li:nth-child(2) > .hanger {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(4) > .sunab > li:nth-child(2) > .hanger > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(4) > .sunab > li:nth-child(2) > .hanger > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 수납/정리 > 현관/신발정리*/
+        #category-main > li:nth-child(4) > .sunab > li:nth-child(3) > .frontdoor {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(4) > .sunab > li:nth-child(3) > .frontdoor > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(4) > .sunab > li:nth-child(3) > .frontdoor > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 수납/정리 > 화장대/소품정리*/
+        #category-main > li:nth-child(4) > .sunab > li:last-child > .makeuptower {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(4) > .sunab > li:last-child > .makeuptower > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(4) > .sunab > li:last-child > .makeuptower > li:hover {color:tomato;}
+
+
+        
+        /*카테고리-메인 - 생활용품*/
+        #category-main > li:nth-child(5) > .sanghal {width:190px; height:700px; display:none; position:absolute; top:-220px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(5) > .sanghal > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(5) > .sanghal > li:hover {color:tomato;}
+        #category-main > li:nth-child(5) > .sanghal > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(5) > .sanghal > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 생활용품 > 청소용품*/
+        #category-main > li:nth-child(5) > .sanghal > li:first-child > .clean {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(5) > .sanghal > li:first-child > .clean > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(5) > .sanghal > li:first-child > .clean > li:hover {color:tomato;}
+        
+        /*카테고리-메인 - 생활용품 > 세탁용품*/
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(2) > .setac {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(2) > .setac > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(2) > .setac > li:hover {color:tomato;}
+        
+        /*카테고리-메인 - 생활용품 > 욕실용품*/
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(3) > .bathroom {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(3) > .bathroom > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(3) > .bathroom > li:hover {color:tomato;}
+
+        
+        /*카테고리-메인 - 생활용품 > 생활잡화*/
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(4) > .life {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(4) > .life > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(5) > .sanghal > li:nth-child(4) > .life > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 생활용품 > 생필품*/
+        #category-main > li:nth-child(5) > .sanghal > li:last-child > .daily {width:190px; height:700px; display:none; position:absolute; top:-282px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(5) > .sanghal > li:last-child > .daily > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(5) > .sanghal > li:last-child > .daily > li:hover {color:tomato;}
+
+
+        /*카테고리-메인 - 조명*/
+        #category-main > li:nth-child(6) > .jomung {width:190px; height:700px; display:none; position:absolute; top:-275px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(6) > .jomung > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(6) > .jomung > li:hover {color:tomato;}
+        #category-main > li:nth-child(6) > .jomung > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(6) > .jomung > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 조명 > 천장조명*/
+        #category-main > li:nth-child(6) > .jomung > li:nth-child(4) > .skyjomung {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(6) > .jomung > li:nth-child(4) > .skyjomung > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(6) > .jomung > li:nth-child(4) > .skyjomung > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 조명 > 전구/조명부속품*/
+        #category-main > li:nth-child(6) > .jomung > li:last-child > .jeongu {width:190px; height:700px; display:none; position:absolute; top:-447px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(6) > .jomung > li:last-child > .jeongu > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(6) > .jomung > li:last-child > .jeongu > li:hover {color:tomato;}
+ 
+    
+        /*카테고리-메인 - 인테리어소품*/
+        #category-main > li:nth-child(7) > .interia {width:190px; height:700px; display:none; position:absolute; top:-330px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:hover {color:tomato;}
+        #category-main > li:nth-child(7) > .interia > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(7) > .interia > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 인테리어소품 > 시계*/
+        #category-main > li:nth-child(7) > .interia > li:first-child > .clock {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:first-child > .clock > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:first-child > .clock > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 홈갤러리*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:hover {color:tomato;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 인테리어소품 > 홈갤러리 > 그림/사진/포스터*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:first-child > .pictureposter {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:first-child > .pictureposter > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:first-child > .pictureposter > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 홈갤러리 > 패브릭포스터*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:nth-child(2) > .pabricposter {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:nth-child(2) > .pabricposter > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(2) > .homegallery > li:nth-child(2) > .pabricposter > li:hover {color:tomato;}
+
+
+
+        /*카테고리-메인 - 인테리어소품 > 아로마/캔들*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(3) > .aroma {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(3) > .aroma > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(3) > .aroma > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 워데코/모빌*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(4) > .mobil {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(4) > .mobil > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(4) > .mobil > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 소품/취미*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(5) > .sopum {width:190px; height:700px; display:none; position:absolute; top:-227px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(5) > .sopum > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(5) > .sopum > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 크리스마스/파티용품*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(6) > .crismas {width:190px; height:700px; display:none; position:absolute; top:-282px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(6) > .crismas > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(6) > .crismas > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 데스크/디자인문구*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk {width:190px; height:700px; display:none; position:absolute; top:-337px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:hover {color:tomato;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 인테리어소품 > 데스크/디자인문구 > 디자인문구*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:first-child > .designmungu {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:first-child > .designmungu > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:first-child > .designmungu > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 데스크/디자인문구 > 데스크용품*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:nth-child(2) > .deskthing{width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:nth-child(2) > .deskthing > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:nth-child(2) > .deskthing > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 데스크/디자인문구 > 케이스/악세사리*/
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:last-child > .case {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:last-child > .case > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:nth-child(7) > .desk > li:last-child > .case > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 원예/식물*/
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants {width:190px; height:700px; display:none; position:absolute; top:-392px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:hover {color:tomato;}
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 인테리어소품 > 원예/식물 > 조화*/
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:first-child > .artificialflower {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:first-child > .artificialflower > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:first-child > .artificialflower > li:hover {color:tomato;}
+        
+        /*카테고리-메인 - 인테리어소품 > 원예/식물 > 식물*/
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(2) > .bamboo {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(2) > .bamboo > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(2) > .bamboo > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 인테리어소품 > 원예/식물 > 꽃다발/플라워박스*/
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(3) > .manyflower {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(3) > .manyflower > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(3) > .manyflower > li:hover {color:tomato;}
+        
+        /*카테고리-메인 - 인테리어소품 > 원예/식물 > 화병/화분*/
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(4) > .flowerpot {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(4) > .flowerpot > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(7) > .interia > li:last-child > .plants > li:nth-child(4) > .flowerpot > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가전*/
+        #category-main > li:nth-child(8) > .gajeon {width:190px; height:700px; display:none; position:absolute; top:-385px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:hover {color:tomato;}
+        #category-main > li:nth-child(8) > .gajeon > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(8) > .gajeon > li:hover > .arrow{display:inline-block;}
+        
+        /*카테고리-메인 - 가전 > 겨울가전*/
+        #category-main > li:nth-child(8) > .gajeon > li:first-child > .winter {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li:first-child > .winter > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:first-child > .winter > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가전 > 청소가전*/
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(2) > .cleargajeon {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(2) > .cleargajeon > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(2) > .cleargajeon > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가전 > 주방가전*/
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(3) > .kitchengajeon{width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(3) > .kitchengajeon > li {height:52px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(3) > .kitchengajeon > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가전 > 생활가전*/
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(4) > .lifegajeon{width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(4) > .lifegajeon > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(4) > .lifegajeon > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가전 > 미용기기*/
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(5) > .beauty{width:190px; height:700px; display:none; position:absolute; top:-227px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(5) > .beauty > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(5) > .beauty > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가전 > 영상/음향*/
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(6) > .video{width:190px; height:700px; display:none; position:absolute; top:-282px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(6) > .video > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:nth-child(6) > .video > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 가전 > 여름가전*/ 
+        #category-main > li:nth-child(8) > .gajeon > li:last-child > .summer {width:190px; height:700px; display:none; position:absolute; top:-337px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(8) > .gajeon > li:last-child > .summer > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(8) > .gajeon > li:last-child > .summer > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 디지털*/
+        #category-main > li:nth-child(9) > .digital {width:190px; height:700px; display:none; position:absolute; top:-440px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(9) > .digital > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(9) > .digital > li:hover {color:tomato;}
+        #category-main > li:nth-child(9) > .digital > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(9) > .digital > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 디지털 > 모바일/태블릿*/
+        #category-main > li:nth-child(9) > .digital > li:first-child > .mobile {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(9) > .digital > li:first-child > .mobile > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(9) > .digital > li:first-child > .mobile > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 디지털 > PC/노트북*/
+        #category-main > li:nth-child(9) > .digital > li:nth-child(3) > .notebook {width:190px; height:700px; display:none; position:absolute; top:-117px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(9) > .digital > li:nth-child(3) > .notebook > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(9) > .digital > li:nth-child(3) > .notebook > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 캠핑용품*/
+        #category-main > li:nth-child(10) > .camping {width:190px; height:700px; display:none; position:absolute; top:-495px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(10) > .camping > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(10) > .camping > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 반려동물*/
+        #category-main > li:nth-child(11) > .animal {width:190px; height:700px; display:none; position:absolute; top:-550px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(11) > .animal > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(11) > .animal > li:hover {color:tomato;}
+        #category-main > li:nth-child(11) > .animal > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:nth-child(11) > .animal > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 반려동물 > 강아지*/
+        #category-main > li:nth-child(11) > .animal > li:first-child > .dog {width:190px; height:700px; display:none; position:absolute; top:-7px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(11) > .animal > li:first-child > .dog > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(11) > .animal > li:first-child > .dog > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 반려동물 > 고양이*/
+        #category-main > li:nth-child(11) > .animal > li:last-child > .cat {width:190px; height:700px; display:none; position:absolute; top:-62px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:nth-child(11) > .animal > li:last-child > .cat > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:nth-child(11) > .animal > li:last-child > .cat > li:hover {color:tomato;}
+
+        /*카테고리-메인 - 시공/DIY*/
+        #category-main > li:last-child > .diy {width:190px; height:700px; display:none; position:absolute; top:-605px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:last-child > .diy > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:last-child > .diy > li:hover {color:tomato;}
+        #category-main > li:last-child > .diy > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:last-child > .diy > li:hover > .arrow{display:inline-block;}
+
+        /*카테고리-메인 - 시공/DIY > 바닥재/바닥타일*/
+        #category-main > li:last-child > .diy > li:nth-child(4) > .floor {width:190px; height:700px; display:none; position:absolute; top:-172px; left:190px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+        #category-main > li:last-child > .diy > li:nth-child(4) > .floor > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+        #category-main > li:last-child > .diy > li:nth-child(4) > .floor > li:hover {color:tomato;}
+
+        .slash {width:1px; height:16px; float:left; margin:0px 20px 0 10px; text-align:center;}
+        #headerright {width:310px; height:54px; float:right; margin:-57px 0px 0 0px;}
+        
+        .headerright1 {width:100px; height:38px; background: linear-gradient(0deg, rgb(83, 91, 99), rgb(83, 91, 99)), linear-gradient(rgb(248, 106, 69) 0%, rgb(255, 104, 142) 100%);; float:left; margin:10px 1px 0 0; border-radius:20px;}
+        .headerright1 > span {font-size:13px; color:rgb(255, 255, 255); font-weight:700; font-style:normal; text-align:center; display:block;
+        margin:10px 0 0 0;}
+        
+        .headerright2 {width:115px; height:20px;  float:left; margin:0 1px 0 0; }
+        .headerright2 > span {display:block; font-size:14px; font-weight:bold; font-style:normal; color:rgb(24, 29, 31); margin:20px 0 0 10px;}
+        
+        .headerright3 {width:70px; height:20px; float:left; margin:0 1px 0 0;}
+        .headerright3 > span {display:block; font-size:14px; font-weight:bold; font-style:normal; color:rgb(24, 29, 31); margin:20px 0 0 10px;}
+
+
+        /*푸터*/
+        footer {width: 100%; height: 472px; margin: 0 auto; background: rgb(247, 248, 249);}
+        
+        /*푸터 라인 1*/
+        #footerline1 {width:100%; height:1px; background-color:rgba(51, 60, 69);}
+        
+        /*푸터 1*/
+        #footer1 {width:1240px; height:197px; padding:14px 0 0 0px; margin:0 auto; }
+        /*푸터 1 바텀*/
+        #footerbottom {width:1240px; height:183px; }
+        /*푸터 1 바텀 레프트*/
+        #footerbottom1 {width:372px; height:183px; float:left;}
+        .footerspan1 > span {font-size:17px; color:rgb(24, 29, 31); font-weight:bold; line-height:48px;}
+        .footerbottom1 > span {color:rgb(83, 91, 99); font-size:14px; font-weight:normal; line-height:27px;}
+        
+        /*푸터 1 바텀 센터*/
+        #footerbottom2 {width:372px; height:183px; float:left; }
+        .footerspan2 > span {color:rgb(24, 29, 31); font-size:17px; font-weight:bold; line-height:48px;}
+        .phone > span {display:inline-block; overflow:initial; color:rgb(24, 29, 31); font-size:36px; font-weight:normal; font-style:normal; line-height:50px; text-align:inherit;}
+        .footerbottom2-span > span {color:rgb(83, 91, 99); font-size:14px; font-weight:normal; line-height:26px;}
+        
+        /*푸터 1 바텀 라이트*/
+        #footerbottom3 {width:40%; height:48px; float:left; }
+        #footerbottom3 > a > img{width:32px; height:32px; margin:0px 8px; border-radius:20px; background-color:rgba(137, 143, 148); transition:all 0.3s sase 0s; float:right;}
+        
+        /*푸터 라인 2*/
+        #footerline2 {width:100%; height:1px; background-color:rgba(51, 60, 69); margin:28px 0 30px 0px;}
+        
+        /*푸터2*/
+        #footer2 {width:1240px; height:165px; margin:0 auto;}
+        
+        /*푸터2바텀1*/
+        #footer2bottom1 {width:1240px; height:15px; }
+        
+        .footer2bottom {width:60px; height:15px; border-right:1px solid rgb(51, 60, 69); float:left; margin:0 10px 0 0;}
+        .footer2bottom:nth-child(4) {width:120px; height:12px;  border-right:1px solid rgb(51, 60, 69); float:left;}
+        .footer2bottom > span > a { font-size:13px; line-height:18px; color:rgb(24, 29, 31); font-weight:bold; text-decoration:none;
+        display:inline-block; margin:-3px 0 0 0;}
+        
+        /*푸터2바텀2*/
+        #footer2bottom2 {width:1240px; height:75px;  display:flex; margin:14px 0 0; }
+        #footer2bottom2 > span {width:600px; height:75px; float:left; font-size:14px; color:rgba(83, 91, 99);}
+        
+        /*푸터2바텀3*/
+        #footer2bottom3 {width:1240px; height:24px; margin:10px 0 30px;  display:flex;}
+        #footer2bottom3img > a > img {width:24px; height:24px; float:left; margin:0 10px 0 0;}
+        
+        #footer2bottom3 > p {color:rgb(83, 91, 99); font-size:14px; font-weight:normal; line-height:24px; margin:0 0 0 10px;}
+        
+        /*푸터3*/
+        #footer3 {width:100%; height:50px; background-color:rgba(24, 29, 31);; overflow:hidden; padding:15px 0 17px; display:flex;}
+        #footer3 > span {color: rgb(197, 200, 206); font-size: 13px; line-height: 18px; white-space: nowrap; margin: 0px 50px 0px 0px;}

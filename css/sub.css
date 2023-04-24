@@ -1,0 +1,156 @@
+@charset "utf-8";
+    * {box-sizing:border-box; margin:0;}
+    body {margin:0;}
+    ul, li, ol {list-style:none; margin:0; padding:0;} 
+    table, tr, th ,td {margin:0; padding:0; }
+    li {float:left;}
+    li:hover {cursor:pointer;}
+    #box {width:500px; height:600px;  margin:30px 100px;}
+    #transformimg {width:500px; height:100px; }
+    .w1 {width:500px; height:500px;}
+    #transformimg img {width:90px; height:90px; margin:5px 15px 0 0px;}
+    
+    #sub-main {width:100%; height:8000px; margin:0 auto;}
+
+
+    #sub-nav {width:100%; height:55px; margin:0 auto;}
+    #sub-nav > nav > ul {width:1240px; height:53px; margin:0 auto;border:2px solid #f1f3f6;}
+    #sub-nav > nav > ul > li {float:left; font-size:14px; cursor:pointer; padding:16px 0;
+    margin: 0 10px 0 10px; color:#666;}
+    #sub-nav > nav > ul > li:nth-child(15) {font-weight:600;}
+    #sub-nav > nav > ul > li > a {text-decoration:none; color:#333; font-weight:bold;}
+
+    .sub-main-top {width:1400px; height:800px; margin:0 auto;}
+
+    .sub-main-top-left {width:700px; height:800px; float:left; position:absolute;}
+    .sub-main-top-left > h3 {width:500px; height:20px; color:#666; font-weight:bold;  margin:30px 100px;}
+    
+    .sub-main-top-right {width:700px; height:800px; float:right; }
+    .sub-main-top-right-info {width:600px; height:690px; margin:80px auto 0px; background-color:#fff;}
+    .sub-main-top-right-info-box {width:525px; height:390px; margin:0 0 0 25px; }
+    .sub-main-top-right-info-box > p {font-size:14px; color:rgb(100, 111, 124); font-weight:500;}
+    .sub-main-top-right-info-box > h3 {font-size:20px; color:rgb(51, 60, 69); font-weight:500; margin:10px 0 0 0;}
+    .sub-main-top-right-info-box > table {width:350px; height:300px; text-align:left; margin:35px 0 0 0; padding:0;}
+    .table-th {font-size:18px; color: rgb(197, 200, 206); font-weight:bold;}
+    .table-td {font-size:15px; color:#000; padding:0 0 0 20px; font-weight:bold;}
+    .table-th-price {font-size:18px; color:rgb(197, 200, 206); font-weight:normal; text-decoration: line-through;}
+    .table-th-persent {font-size:30px; color:#000;}
+    .table-td-price {font-size:30px; color:#000;}
+    .sub-main-info-line {width:100%; height:1px; background:rgb(241, 243, 246); margin: 22px 0px 19px;}
+
+    .sub-main-info-select {width:550px; height:230px; margin:0 0 0 25px;}
+    .sub-main-info-select > h1 {font-size:18px; color:rgb(64, 70, 76); margin:10px;}
+    .sub-main-info-select > select {float:left; position:relative; width:380px; height:40px; border:1px solid rgb(233, 235, 238); border-radius:8px; background:rgb(255, 255, 255); margin:10px; display:block;}
+    .sub-main-button {width:400px; height:60px; float:left; margin:10px; }
+    .sub-main-button1 > button {float:left; background: rgb(255, 236, 236); color: rgb(238, 109, 109); font-size: 16px; font-weight: bold; width:190px; height:60px; border-radius:12px; cursor:pointer; border:0; margin:0 5px 0 0;}
+    .sub-main-button2 > button {float:left; width:190px; height:60px; border-radius:12px; cursor:pointer; background: rgb(238, 109, 109); font-size: 16px; font-weight: bold; border:0;}
+
+    #sub-main-client {width:1240px; height:350px; margin:0 auto; border:1px solid rgb(197, 200, 206);}
+
+    .sub-main-client-top {width:1240px; height:50px; }
+    .sub-main-client-top > h2 {font-size:23px; color:#333c45; display:block; float: left; margin:15px 0 0 17px;}
+
+    
+
+    .sub-main-client-center {width:1240px; height:250px; margin:25px 0 0 0;}
+    .sub-main-client-box {width:280px; height:230px; float:left; margin:15px 10px 15px 17px ; }
+    .sub-main-client-box > span {color:#000; font-size:16px; font-weight:bold; float:left; display:block;
+    margin:5px;}
+    .sub-main-client-box > p {color:#333c45; font-size:14px; font-weight:normal; display:block; margin:5px;}
+    .sub-main-client-img {width:280px; height:170px; overflow:hidden;}
+    .sub-main-client-img > img {width:280px; height:170px; transform:scale(1); transition:all 0.3s ease-in-out;}
+    .sub-main-client-img > img:hover {transform:scale(1.13);}
+
+
+
+    #sub-main-section {width:1240px; height:7100px; margin:0 auto;}
+
+    #product > ul {width:1200px; height:50px; margin:40px auto 0px;}
+    #product > ul > li {width:300px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
+    #product > ul > li > a {color:#000; text-decoration:none;}
+    #product > ul > li:first-child {background-color:#fff; border:1px solid #000; border-bottom:none; color:#000;}
+    
+    #product > h1 {font-size:60px; text-align:center; margin:20px;}
+    
+    .sub-main-product-img {width:1240px; height:700px; margin:0 auto;}
+    .sub-main-product-img > img {width:1180px; height:680px; margin:10px 30px;}
+    
+    .sub-main-product-img2 {width:1240px; height:700xp; margin:0 auto;}
+    .sub-main-product-img2 > img {width:1180px; height:680px; margin:10px 30px;}
+    
+    .sub-main-product-img3 {width:500px; height:800px; float:left; margin:200px 0px 0 80px;}
+    .sub-main-product-img3 > img {width:100%; height:100%;}
+    
+    .sub-main-product-img4 {width:500px; height:800px; float:right; margin:80px 130px 0 0;}
+    .sub-main-product-img4 > img {width:100%; height:100%;}
+    
+    .sub-main-product-img5 {width:1240px; height:700px; margin:0 auto;}
+    .sub-main-product-img5 > img {width:1180px; height:680px; margin:30px 30px;}
+    
+    .sub-main-product-img6 {width:1240px; height:700px; margin:0 auto;}
+    .sub-main-product-img6 > img {width:1180px; height:680px; margin:30px 30px;}
+    
+    .sub-main-product-double-img {width:1240px; height:1000px;}
+
+    #product > span {display:block; text-align:center; font-size:40px; color:#000; margin:60px;}
+    #product > p {display:block; text-align:center; font-size:25px; margin:30px;}
+
+    .sub-main-product-p > p {display:block; text-align:center; margin:40px 0 0 0; font-size:17px; }
+
+
+    #detail_tablebox  {width:900px; height:550px; margin:30px auto 0px; display:block; border-top:1px solid #ddd;}
+    #detail_tablebox > h4 {text-align:left; margin: 40px 0 0 0px; font-size:35px;}
+    #detail_tablebox > span { display:inline-block; font-size:15px;  margin:5px 0 0 0px; width:100%; text-align:right;} 
+    #detail_tablebox > table {display:block; margin:10px 0 0 0px; line-height:30px;}
+    #detail_tablebox > table th {font-size:14px; text-align:left; width:200px; background-color:#ddd; padding:0 0 0 20px;}
+    #detail_tablebox > table td {font-size:14px; text-align:left; width:700px; background-color:#eee; padding:0 0 0 20px; color:#333;}
+
+    #shipping {width:1200px; height:500px; margin:10px auto 0;}
+    #shipping > ul {width:1200px; height:50px; margin:-60px auto 0px;}
+    #shipping > ul > li {width:300px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
+    #shipping > ul > li > a {color:#000; text-decoration:none;}
+    #shipping > ul > li:nth-child(2) {background-color:#fff; border:1px solid #000; border-bottom:none; color:#000;}
+    #shipping > h2 {float:left; padding:50px 20px 0px; font-size:19px;}
+    #shipping > #shipping_textbox {width:100%; height:270px;}
+    #shipping > #shipping_textbox > ul {display:block; width:1100px; height:280px;  margin:100px 35px 0px;}
+
+    #shipping > #shipping_textbox > ul > li {font-size:13px; list-style:disc; margin:7px 10px; color:#666;}
+
+
+    
+    #review ul {width:1200px; height:50px; margin:40px auto 0px;}
+    #review ul > li {width:300px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
+
+    ul > li > a {color:#000; text-decoration:none;}
+    #review_tablebox  table th {width:80px; border-bottom:1px solid #eee; color:#333}
+    #review_tablebox  table td:first-of-type {width:770px; border-bottom:1px solid #eee;}
+    #review_tablebox  table td:first-of-type > a {color:#333; text-decoration:none;}
+    #review_tablebox  table td:nth-of-type(2) {width:80px; text-align:center; border-bottom:1px solid #eee;}
+    #review_tablebox  table td:nth-of-type(3) {width:120px; text-align:center; border-bottom:1px solid #eee;}
+    #review_tablebox table td:last-of-type {width:150px; text-align:center; border-bottom:1px solid #eee;}
+    #review {width:1200px; height:400px; margin:50px auto 0;}
+    #review  > ul > li:nth-child(3) {background-color:#fff; border:1px solid #000; border-bottom:none;}
+    #review > #review_tablebox > button {float:right; margin:25px 0px; width:120px; height:30px; color:#fff; font-size:12px; background-color:#333; border:1px solid #ddd;}
+    #review > #review_tablebox > button:hover {cursor:pointer;}
+    #review > #review_tablebox > table {display:inline-block; margin:0px auto; border-top:1px solid #333; line-height:50px; width:1200px; font-size:13px; color:#333;}
+
+
+
+
+    #inquiry  ul {width:1200px; height:50px; margin:40px auto 0px;}
+
+    #inquiry  ul > li {width:300px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
+    ul > li > a {color:#000; }
+    #inquiry_tablebox table th {width:80px; border-bottom:1px solid #eee; color:#333}
+    #inquiry_tablebox table td:first-of-type {width:770px; border-bottom:1px solid #eee;}
+    #inquiry_tablebox table td:first-of-type > a {color:#333;}
+    #inquiry_tablebox table td:nth-of-type(2) {width:80px; text-align:center; border-bottom:1px solid #eee;}
+    #inquiry_tablebox table td:nth-of-type(3) {width:120px; text-align:center; border-bottom:1px solid #eee;}
+    #inquiry_tablebox table td:last-of-type {width:150px; text-align:center; border-bottom:1px solid #eee;}
+    #inquiry {width:1200px; height:400px; margin:100px auto;}
+    #inquiry > ul > li:last-child {background-color:#fff; border:1px solid #000; border-bottom:none;}
+    #inquiry > #inquiry_tablebox {width:1200px; height:450px; margin:0 auto; text-align:center;}
+    #inquiry > #inquiry_tablebox > button {float:right; margin:25px 0px; width:120px; height:30px; color:#fff; font-size:12px; background-color:#333; border:1px solid #ddd;}
+    #inquiry > #inquiry_tablebox > button:hover {cursor:pointer;}
+    #inquiry > #inquiry_tablebox > table {display:inline-block; margin:0px auto; border-top:1px solid #333; line-height:50px; width:1200px;font-size:13px; color:#333;}
+    #inquiry_tablebox > table a {text-decoration:none;}

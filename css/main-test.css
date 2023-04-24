@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+        * {margin:0; box-sizing: border-box;}
+        ul, li, ol {list-style:none; margin:0; padding:0; }
+        
+        /*섹션5*/
+        #section5 {width:100%; height:588px; display:block; padding:50px 0;}
+        
+        /*섹션5탑*/
+        #section5top {width:1240px; height:40px;  margin:24px auto 0px;}
+        #section5top > span {width:360px; height:40px; font-size:26px; color:rgb(24, 29, 31); font-weight:bold; }
+        #section5top > button {width:82px; height:30px; border-radius:16px; border:none; text-align:center; font-size:1rem; background: linear-gradient(rgb(247, 106, 66) 0%, rgb(255, 103, 145) 100%); color:white; font-weight:bold;}
+        
+        /*섹션5바텀*/
+        #section5bottom {width:1240px; height:425px; margin:0 auto;}
+        .section5box {width:295px; height:425px;  margin:5px; float:left; }
+        .background-image-popup-img {width:295px; height:295px; overflow:hidden; margin:10px 0 0 0; border-radius:6px;}
+        
+        .background-image-popup-img > a > img {width:293px; height:293px; border: 1px solid rgb(233, 235, 238); position:relative; border-radius:6px; transform:scale(1); transition:all 0.2s ease-in-out 0s;}
+        .background-image-popup-img > a > img:hover {transform:scale(1.15);}
+
+        .section5box > p {color:rgba(137, 143, 148); font-size:13px; font-weight:normal; text-align:inherit;margin:10px 0 0px 10px;}
+        .section5box > span {color: black;font-size: 14px;font-weight: 500;line-height: 22px;max-height: 40px; overflow-wrap: normal;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;text-overflow: ellipsis;word-break: break-all; margin:0 0 0 10px;}
+
+        .persentspan > span {font-size:26px; color:rgb(249, 9, 71); font-weight:700; line-height:22px; display:inline-block; float:left; margin:0 0 0 10px;}
+        .priceblack > span {display: inline-block; color:black; font-size:20px; font-weight:700; line-height:22px; margin:0 0 0 10px;}
+        
+        .popup-button {margin:15px 6px 0 13px; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px; border:0; color:rgb(249, 9, 71, 0.75);}
+        .popup-free {margin:15px 6px 0 0; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px;
+        border:0; color:rgb(83, 91, 99);} 

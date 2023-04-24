@@ -1,0 +1,36 @@
+[{
+	"url" : "popup2-img1.jpg",
+	"title" : "퍼니월",
+	"subtitle" : "원형 사각 간단 셀프 인테리어 붙이는 템바...",
+	"persent" : "63%",
+	"price" : "29,900원",
+	"button" : "",
+	"subbutton" : ""
+
+}, {
+	"url" : "popup2-img2.jpg",
+	"title" : "헨즈홈",
+	"subtitle" : "[2월특가]핸즈카페트 12종 1BOX(20장)...",
+	"persent" : "8%",
+	"price" : "11,000원",
+	"button" : "",
+	"subbutton" : "무료배송"
+
+}, {
+	"url" : "popup2-img3.jpg",
+	"title" : "퍼니월",
+	"subtitle" : "부직포 옷커버 의류커버 옷비닐 세탁소비...",
+	"persent" : "24%",
+	"price" : "6,500원",
+	"button" : "",
+	"subbutton" : ""
+
+}, {
+	"url" : "popup2-img4.jpg",
+	"title" : "클린업",
+	"subtitle" : "북유럽 패턴 코일매트 217종 (현괸/베란다...",
+	"persent" : "58%",
+	"price" : "290원",
+	"button" : "특가",
+	"subbutton" : ""
+}]

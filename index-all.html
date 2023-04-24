@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///D:/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/HOUSE.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio 집꾸미기</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main-all.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
+
+    
+
+    <script>
+        
+        $(function(){
+            $.ajax({
+
+                url : "./json/section2.json",
+                dataType : "json",
+                success : function(data){
+                    if(data.length > 0){
+                        
+                        for(var i in data){
+
+                            $(".iconbox1").eq(i).find("p").text(data[i].title); 
+                            $(".iconbox1").eq(i).find("span").text(data[i].subtitle);
+                            $(".background-image-today").eq(i).find("span").text(data[i].today); 
+                            $(".persentspan").eq(i).find("span").text(data[i].persent);
+                            $(".priceblack").eq(i).find("span").text(data[i].price);
+                            $(".iconbox1").eq(i).find("button").text(data[i].button);
+                            $(".iconbox1").eq(i).find(".free").text(data[i].subbutton);
+                        }
+                    }
+                }
+            })
+        });
+
+    </script>
+
+<script>
+        
+    $(function(){
+        $.ajax({
+
+            url : "./json/section4box.json",
+            dataType : "json",
+            success : function(data){
+                if(data.length > 0){
+                    
+                    for(var i in data){
+
+                        $(".section4box").eq(i).find("p").text(data[i].title); 
+                        $(".section4box").eq(i).find("span").text(data[i].subtitle); 
+                        $(".background-image-smart-persent").eq(i).find("span").text(data[i].persent); 
+                        $(".background-image-smart-priceblack").eq(i).find("span").text(data[i].price); 
+                        $(".background-image-smart-button").eq(i).find("button").text(data[i].button);
+                    }
+                }
+            }
+        })
+    });
+
+
+</script>
+
+    <script>
+        
+        $(function(){
+            $.ajax({
+
+                url : "./json/section5box.json",
+                dataType : "json",
+                success : function(data){
+                    if(data.length > 0){
+                        
+                        for(var i in data){
+
+                            $(".background-image-popup-img").eq(i).find("img").attr("src", "img_popup1/"+data[i].url);
+
+                            $(".section5box").eq(i).find("p").text(data[i].title); 
+                            $(".section5box").eq(i).find("span").text(data[i].subtitle); 
+                            $(".section5box").eq(i).find(".persentspan span").text(data[i].persent); 
+                            $(".section5box").eq(i).find(".priceblack span").text(data[i].price); 
+                            $(".section5box").eq(i).find(".popup-button").text(data[i].button);
+                            $(".section5box").eq(i).find(".popup-free").text(data[i].subbutton);
+                        }
+                    }
+                }
+            })
+        });
+
+
+    </script>
+
+<script>
+        
+    $(function(){
+        $.ajax({
+
+            url : "./json/section6box.json",
+            dataType : "json",
+            success : function(data){
+                if(data.length > 0){
+                    
+                    for(var i in data){
+
+                        $(".background-image-popup2-img").eq(i).find("img").attr("src", "img_popup2/"+data[i].url);
+
+                        $(".section6box").eq(i).find("p").text(data[i].title); 
+                        $(".section6box").eq(i).find("span").text(data[i].subtitle); 
+                        $(".section6box").eq(i).find(".persentspan span").text(data[i].persent); 
+                        $(".section6box").eq(i).find(".priceblack span").text(data[i].price); 
+                        $(".section6box").eq(i).find(".popup2-button").text(data[i].button);
+                        $(".section6box").eq(i).find(".popup2-free").text(data[i].subbutton);
+                    }
+                }
+            }
+        })
+    });
+
+
+</script>
+
+<script>
+    
+    $(function(){
+        $.ajax({
+
+            url : "./json/section7box.json",
+            dataType : "json",
+            success : function(data){
+                if(data.length > 0){
+                    
+                    for(var i in data){
+
+                        $(".section7box").eq(i).find("img").attr("src", "img_sns/"+data[i].url);
+
+                        $(".section7box").eq(i).find("p").text(data[i].title); 
+                        $(".section7box").eq(i).find("span").text(data[i].subtitle); 
+                        $(".section7box").eq(i).find(".persentspan span").text(data[i].persent); 
+                        $(".section7box").eq(i).find(".priceblack span").text(data[i].price); 
+                        $(".section7box").eq(i).find(".sns-button").text(data[i].button);
+                        $(".section7box").eq(i).find(".sns-free").text(data[i].subbutton);
+                    }
+                }
+            }
+        })
+    });
+
+
+</script>
+</head>
+
+<body>
+    <header>
+        <div id="headertop">
+        <div id="logo">
+            <a href="#"><img src="img/img_logo/logo.jpg" alt="집 꾸미기 로고"></a>
+        </div>
+        <div id="search">
+            <button>
+                <img src="img/img_head/head-img-magnifier.jpg" alt="돋보기">
+            </button>
+            <input type="text" Placeholder="인테리어 정보,상품 검색">
+        </div>
+        <div id="category">
+            <a href="sub.html" targer="_self"><img src="img/img_head/head-img-bookmark.jpg" alt="북마크"></a>
+        </div>
+        <div id="showping">
+            <a href="sub.html" targer="_self"><img src="img/img_head/head-img-showpping.jpg" alt="쇼핑"></a>
+        </div>
+        </div>
+        <div id="line">
+        </div>
+        <div id="headerbottom">
+            <nav>
+                <ul>
+                    <div class="navhead">
+                        <img src="img/img_nav/nav-img.jpg" alt="카테고리그림">
+                    </div>
+                    <li><a href="sub.html" target="_self"><b>카테고리</b></a></li>
+                    <div class="slash">|</div>
+                    <li><a href="sub.html" target="_self"><b>스토어</b></a></li>
+                    <li><a href="sub.html" target="_self"><b>매거진</b></a></li>
+                    <li><a href="sub.html" target="_self"><b>쇼핑</b></a></li>
+                    <li><a href="sub.html" target="_self"><b>인기</b></a></li>
+                </ul>
+            </nav>
+        <div id="headerright">
+            <a href="join.html" targer="_self">
+                <div class="headerright1">
+                    <span>로그인/가입</span>
+                </div>
+            </a>
+            <a href="login.html" targer="_self">
+                <div class="headerright2">
+                    <span>비회원 주문조회</span>
+                </div>
+            </a>
+            <a href="sub.html" targer="_self">
+                <div class="headerright3">
+                    <span>고객센터</span>
+                </div>
+            </a>
+        </div>
+        </div>
+    </header>
+    <div id="slider"> 
+    </div>
+
+    
+    <section>
+        <div id="section1">
+            <div id="section1left">
+                <div class="showpping">
+                    <a href="sub.html" targer="_self"><img src="img/img_section1/section1-showpping.jpg" alt="쇼핑하기"></a>
+                    <span>쇼핑하기</span>
+                </div>
+                <div class="popular">
+                    <a href="sub.html" targer="_self"><img src="img/img_section1/section1-popular.png" alt="인기상품"></a>
+                    <span>인기상품</span>
+                </div>
+                <div class="house">
+                    <a href="sub.html" targer="_self"><img src="img/img_section1/section1-house.png" alt="집들이이"></a>
+                    <span>집들이</span>
+                </div>
+                <div class="picture">
+                    <a href="sub.html" targer="_self"><img src="img/img_section1/section1-picture.png" alt="공간사진"></a>
+                    <span>공간사진</span>
+                </div>
+                <div class="tv">
+                    <a href="sub.html" targer="_self"><img src="img/img_section1/section1-tv.png" alt="잠꾸TV2"></a>
+                    <span>잠꾸TV</span>
+                </div>
+            </div>
+            <div id="section1center">
+            </div>
+            <div id="section1right">
+                <h4>집꾸미기 신규 가입 혜택<br>
+                5% 할인 쿠폰 지급</h4>
+                <button>가입하기</button>
+            </div>
+        </div>
+
+        <div id="section2">
+            <div id="section2top">
+                <span>투데이특가</span>
+                <button>전체 보기 ></button>
+            </div>
+            <div id="section2center">
+                <span>매일매일 추가되는 100여개의 상품</span>
+            </div>
+            <div id="section2bottom">
+                <div class="iconbox1">
+                    <div class="background-image-today">
+                        <span></span>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button></button>
+                    <button class="free"></button>
+                </div>
+                <div class="iconbox1">
+                    <div class="background-image-today">
+                        <span></span>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button></button>
+                    <button class="free"></button>
+                </div>
+                <div class="iconbox1">
+                    <div class="background-image-today">
+                        <span></span>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button></button>
+                    <button class="free"></button>
+                </div>
+                <div class="iconbox1">
+                    <div class="background-image-today">
+                        <span></span>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button></button>
+                    <button class="free"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3">
+            <div id="section3top">
+                <span><b>카테고리별 상품찾기</b></span>
+            </div>
+            <div id="section3bottom">
+                <div id="iconbox2">
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img1.png" alt="가구"></a>
+                    <span>가구</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img2.png" alt="페브릭"></a>
+                    <span>페브릭</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img3.png" alt="주방"></a>
+                    <span>주방</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img4.png" alt="수납/정리"></a>
+                    <span>수납/정리</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img5.png" alt="생활용품"></a>
+                    <span>생활용품</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img6.png" alt="조명"></a>
+                    <span>조명</span>
+                    </div>
+                    <div id="iconboxsopum">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img7.png" alt="인테리어소품"></a>
+                    <span>인테리어소품</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img8.png" alt="가전"></a>
+                    <span>가전</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img9.png" alt="디지털"></a>
+                    <span>디지털</span>
+                    </div>
+                    <div class="iconbox2">
+                        <a href="sub.html" targer="_self"><img src="img/img_section3/section3-img10.png" alt="캠핑용품"></a>
+                    <span>캠핑용품</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section4">
+            <div id="section4center">
+                <div class="section4box-left">
+                    <div class="span-left-top">
+                        <span>기획전</span>
+                    </div>
+                    <span>똑똑하게<br>
+                    쇼핑하기</span>
+                    <p>NEW 리퍼브 상품 업데이트!</p>
+                    <button>기획전 상품 더보기</button>
+                </div>
+                <div class="section4box">
+                    <div class="background-image-smart">
+                    </div>
+                    <p><b></b></p>
+                    <span></span>
+                    <div class="background-image-smart-persent">
+                        <span></span>
+                    </div>
+                    <div class="background-image-smart-priceblack">
+                        <span></span>
+                    </div>
+                    <div class="background-image-smart-button">
+                    <button></button>
+                    </div>
+                </div>
+                <div class="section4box">
+                    <div class="background-image-smart">
+                    </div>
+                    <p><b></b></p>
+                    <span></span>
+                    <div class="background-image-smart-persent">
+                        <span></span>
+                    </div>
+                    <div class="background-image-smart-priceblack">
+                        <span></span>
+                    </div>
+                    <div class="background-image-smart-button">
+                    <button></button>
+                    </div>
+                </div>
+                <div class="section4box">
+                    <div class="background-image-smart">
+                    </div>
+                    <p><b></b></p>
+                    <span></span>
+                    <div class="background-image-smart-persent">
+                        <span></span>
+                    </div>
+                    <div class="background-image-smart-priceblack">
+                        <span></span>
+                    </div>
+                    <div class="background-image-smart-button">
+                    <button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section5">
+            <div id="section5top">
+                <span>다가오는 봄! 겨울 옷&이불 수납템</span>
+                <button>POP-UP</button>
+            </div>
+            <div id="section5bottom">
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="블랑 리빙박스"></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="홈엔하우스 옷장" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="메이스 부직포"></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="바지 수납 옷 정리함" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="section6">
+            <div id="section6top">
+                <span>곰손도 가능한 우리집 셀프인테리어</span>
+                <button>POP-UP</button>
+            </div>
+            <div id="section6bottom">
+                <div class="section6box">
+                    <div class="background-image-popup2-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="퍼니월 붙이는 템바보드" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup2-button"></button>
+                    <button class="popup2-free"></button>
+                </div>
+                <div class="section6box">
+                    <div class="background-image-popup2-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="핸즈홈카페트" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup2-button"></button>
+                    <button class="popup2-free"></button>
+                </div>
+                <div class="section6box">
+                    <div class="background-image-popup2-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="퍼니월 웨인스코팅 벽지" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup2-button"></button>
+                    <button class="popup2-free"></button>
+                </div>
+                <div class="section6box">
+                    <div class="background-image-popup2-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="클린업 코일매트"></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup2-button"></button>
+                    <button class="popup2-free"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="section7">
+            <div id="section7top">
+                <span>집꾸미기 SNS 인기템</span>
+            </div>
+            <div id="section7bottom">
+                <div class="section7box">
+                    <div class="background-image-sns-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="집드리 공중회전"></a>
+                    </div>
+                    <p></p>
+                    <span>[</span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="sns-button"></button>
+                    <button class="sns-free"></button>
+                </div>
+                <div class="section7box">
+                    <div class="background-image-sns-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="슬로우랩 청소티슈"></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="sns-button"></button>
+                    <button class="sns-free"></button>
+                </div>
+                <div class="section7box">
+                    <div class="background-image-sns-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="바나나빌딩 폴딩 선반" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="sns-button"></button>
+                    <button class="sns-free"></button>
+                </div>
+                <div class="section7box">
+                    <div class="background-image-sns-img">
+                    <a href="sub.html" targer="_self"><img src="" alt="로얄푸드 데일리 그릇세트"></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="sns-button"></button>
+                    <button class="sns-free"></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div id="footerline1">
+        </div>
+        <div id="footer1">
+            <div id="footerbottom">
+                <div id="footerbottom1">
+                    <div class="footerspan1">
+                        <span>공지사항</span>
+                    </div>
+                    <div class="footerbottom1">
+                        <span>2023 설 연휴 안내</span>
+                    </div>
+                    <div class="footerbottom1">
+                        <span>회원 포인트 사용 정책 변경안내</span>
+                    </div>
+                    <div class="footerbottom1">
+                        <span>커뮤니티 서비스 종료 안내</span>
+                    </div>
+                    <div class="footerbottom1">
+                        <span>개인정보 처리방침 변경 안내</span>
+                    </div>
+                    <div class="footerbottom1">
+                        <span>2022 추석 연휴 안내</span>
+                    </div>
+                </div>
+                <div id="footerbottom2">
+                    <div class="footerspan2">
+                        <span><b>고객센터</b></span>
+                    </div>
+                    <div class="phone">
+                        <span>1522-7966</span>
+                    </div >
+                    <div class="footerbottom2-span">
+                        <span>평일 10:10 ~ 17:00 <br>
+                        주말 및 공휴일 제외 <br>
+                    (점심시간 : 12:30 ~ 13:30)</span>
+                    </div>
+                </div>
+                <div id="footerbottom3">
+                    <a href="sub.html" targer="_self"><img src="img/img_footer/footer-img1.jpg" alt="네이버포스트"></a>
+                    <a href="sub.html" targer="_self"><img src="img/img_footer/footer-img2.jpg" alt="페이스북"></a>
+                    <a href="sub.html" targer="_self"><img src="img/img_footer/footer-img3.jpg" alt="인스타그램"></a>
+                </div>
+        </div>
+        </div>
+        <div id="footerline2">
+        </div>
+        <div id="footer2">
+            <div id="footer2bottom1">
+                <div class="footer2bottom">
+                    <span><a href="sub.html" targer="_self">이용약관</a></span>
+                </div>
+                <div class="footer2bottom">
+                    <span><a href="sub.html" targer="_self">제휴문의</a></span>
+                </div>
+                <div class="footer2bottom">
+                    <span><a href="sub.html" targer="_self">입점문의</a></span>
+                </div>
+                <div class="footer2bottom">
+                    <span><a href="sub.html" targer="_self">개인정보처리방침</a></span>
+                </div>
+                <div class="footer2bottom">
+                    <span><a href="sub.html" targer="_self">회사소개</a></span>
+                </div>
+            </div>
+
+            <div id="footer2bottom2">
+                <span>대표이사 : 길경환    사업자등록번호 : 142-81-50856  통신판매업신고 : 2022-서울강남-06224<br>
+                    주소: 서울특별시 강남구 언주로 417, 더체크빌딩 3층<br>
+                    개인정보관리책임자 : 길경환<br>
+                    </span>
+            </div>
+
+            <div id="footer2bottom3">
+                <div id="footer2bottom3img">
+                    <a href="sub.html" targer="_self"><img src="img/img_footer/footer-img4.png" alt="푸터2바텀3이미지"></a>
+                </div>
+
+                <div id="footer2bottom3stick">
+                    <span>|</span>
+                </div>
+                <p>안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 KG 이니시스의 구매안전 서비스를 이용하실 수 있습니다.
+                </p>
+            </div>
+        </div>
+        <div id="footer3">
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+                <span>© 집꾸미기 ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+</body>
+</html>

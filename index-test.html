@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///D:/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/HOUSE.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio 집꾸미기</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main-test.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
+
+    <script>
+        
+        $(function(){
+            $.ajax({
+
+                url : "./json/section5box.json",
+                dataType : "json",
+                success : function(data){
+                    if(data.length > 0){
+                        
+                        for(var i in data){
+
+                            $(".background-image-popup-img").eq(i).find("img").attr("src", "img_popup1/"+data[i].url);
+
+                            $(".section5box").eq(i).find("p").text(data[i].title); 
+                            $(".section5box").eq(i).find("span").text(data[i].subtitle); 
+                            $(".section5box").eq(i).find(".persentspan span").text(data[i].persent); 
+                            $(".section5box").eq(i).find(".priceblack span").text(data[i].price); 
+                            $(".section5box").eq(i).find(".popup-button").text(data[i].button);
+                            $(".section5box").eq(i).find(".popup-free").text(data[i].subbutton);
+                        }
+                    }
+                }
+            })
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div id="section5">
+            <div id="section5top">
+                <span>다가오는 봄! 겨울 옷&이불 수납템</span>
+                <button>POP-UP</button>
+            </div>
+            <div id="section5bottom">
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" target="_self"><img src="" alt="블랑 리빙박스"></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" target="_self"><img src="" alt="홈엔하우스 옷장" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" target="_self"><img src="" alt="메이스 부직포"></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+                <div class="section5box">
+                    <div class="background-image-popup-img">
+                    <a href="sub.html" target="_self"><img src="" alt="바지 수납 옷 정리함" ></a>
+                    </div>
+                    <p></p>
+                    <span></span>
+                    <div class="persentspan">
+                        <span></span>
+                    </div>
+                    <div class="priceblack">
+                        <span></span>
+                    </div>
+                    <button class="popup-button"></button>
+                    <button class="popup-free"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

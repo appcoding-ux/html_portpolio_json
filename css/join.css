@@ -1,0 +1,48 @@
+@charset "utf-8"; 
+* {margin:0; padding:0px;}
+        ul, li, ol {list-style:none; margin:0; padding:0;}
+        
+        #sub-join {width:100%; height:1100px; margin:80px 0 0 0;}
+        #sub-join > h1 {width:400px; height:60px; text-align:center; font-size:40px; margin:0 auto;  border-bottom:1px solid #000;}
+        
+        #sub-join > button {width:400px; height:50px; text-align:center; margin:50px auto 0px; display:block; background-color:white; color:black; border:1px solid #000; cursor:pointer;
+        font-weight:bold;}
+
+        #sub-id-password {width:400px; height:200px; margin:40px auto 0px; }
+        #id {width:400px; height:50px; margin:0 auto; color:#3a3636; font-size:12px; border:1px solid rgb(165, 154, 154); border-bottom:none;}
+        #password {width:400px; height:50px; margin:0 auto; color:#3a3636; font-size:12px;border:1px solid rgb(165, 154, 154); border-bottom:none;}
+        #password-onemore {width:400px; height:50px; margin:0 auto; color:#3a3636; font-size:12px;  border:1px solid rgb(165, 154, 154); border-bottom:none;}
+        #email {width:400px; height:50px; margin:0 auto; color:#3a3636; font-size:12px;  border:1px solid rgb(165, 154, 154);}
+
+        #human {width:400px; height:120px; margin:50px auto 0px;}
+        .name > h1 {background:rgba(192, 185, 185, 0.5); border:1px solid #d5d5d5; line-height:30px;}
+        
+        #birthday {width:400px; height:40px;  border:1px solid rgb(165, 154, 154); border-bottom:none;}
+        #date {width:70px; height:35px; outline:none; border:none;}
+        #month {width:70px; height:35px; outline:none; border:none;}
+        #day {width:70px; height:35px; outline:none; border:none;}
+        #birthday > form > button {width:45px; height:25px; border:1px solid #048be3; background-color:#048be3; color:#fff; margin:2px 0 0 6px; cursor:pointer;}
+        #birthday > form > .button {width:45px; height:25px;  border:1px solid rgb(165, 154, 154); background-color:#fff; color:#000; margin:2px 0 0 6px; cursor:pointer;}
+        #phonenumber {width:400px; height:40px;  border:1px solid rgb(165, 154, 154); }
+        #phonenumber > select {width:100px; height:30px; margin:5px 0 0 5px; border:1px solid rgb(165, 154, 154);}
+        .phonenumber {width:100px; height:30px; border:none;}
+
+        #person {width:400px; height:100px;  margin:20px auto 0px;}
+        #person > span {font-weight:bold; color:#000;}
+        #recommendation {width:400px; height:50px; margin:10px 0 0 0;}
+        #recommendation > input {width:400px; height:50px;border:1px solid rgb(165, 154, 154); color:#3a3636;}
+
+        #age {width:400px; height:120px; border-top:1px solid #333; margin:0 auto;}
+        #age > form {margin:25px 0 0 0;}
+        #age > form > input {margin:5px 0 10px 0;}
+        #age > form > input > label {font-size:15px; font-weight:700; color:#000;}
+        .age {font-size:15px; color:#048be3; font-weight:700;}
+
+        #sms {width:400px; height:120px; margin:15px auto 0px;}
+        #sms > span {font-size:17px; color:#000; font-weight:bold;}
+        #sms > form > input {margin:20px 0 0 0;}
+        #sms > form > label {font-size:16px; color:#333; margin:-10px 0 0 0;}
+
+        #sub-join > p {display:block; width:400px; height:20px; margin:0 auto; font-size:10px; font-weight:600; color:#666;}
+        #sub-join > p > span {color:#048be3; font-weight:500;}
+        #sub-join > .join {width:400px; height:50px; background-color:#048be3; color:#fff; font-weight:bold; font-size:18px; border:none;}
