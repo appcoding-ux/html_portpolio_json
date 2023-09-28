@@ -1,0 +1,36 @@
+[{
+	"url" : "popup-img1.jpg",
+	"title" : "블랑",
+	"subtitle" : "옷장 위 & 침대 밑 틈새활용! 화이트 리빙박...",
+	"persent" : "33%",
+	"price" : "19,900원",
+	"button" : "특가",
+	"subbutton" : ""
+
+}, {
+	"url" : "popup-img2.jpg",
+	"title" : "홈엔하우스",
+	"subtitle" : "[1+1]패딩형/큐브형 진공 압축팩 시리즈(...",
+	"persent" : "33%",
+	"price" : "7,900원",
+	"button" : "특가",
+	"subbutton" : "무료배송"
+
+}, {
+	"url" : "popup-img3.jpg",
+	"title" : "메이스",
+	"subtitle" : "부직포 옷커버 의류커버 옷비닐 세탁소비...",
+	"persent" : "69%",
+	"price" : "590원",
+	"button" : "특가",
+	"subbutton" : ""
+
+}, {
+	"url" : "popup-img4.jpg",
+	"title" : "바탕",
+	"subtitle" : "[1+1]패브릭 수납 바지 옷정리함",
+	"persent" : "37%",
+	"price" : "6,900원",
+	"button" : "특가",
+	"subbutton" : ""
+}]

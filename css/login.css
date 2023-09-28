@@ -1,0 +1,45 @@
+@charset "utf-8";
+* {margin:0;}
+        ul, li, ol {list-style:none; margin:0; padding:0;}
+
+        #login {width:100%; height:700px;}
+
+        #login2 {width:1000px; height:700px;  margin:0 auto;}
+
+        #member {width:1000px; height:500px; margin:100px auto; position:absolute;}
+
+        #memberlogin {width:450px; height:500px; float:left; margin:0 0 0 50px;
+        border-right:1px solid #eee;}
+        #memberlogin > span {font-size:25px; color:red; margin:20px 0 20px 0; display:block; font-weight:bold;}
+        #memberlogin > p {color:gray; display:block; margin:0 0 20px 0;}
+        #memberlogin > form > input {width:400px; height:55px; margin:0 0 5px 0; border:1px solid rgb(165, 154, 154); color:#3a3636;}
+        #memberlogin > form > button {width:400px; height:65px; margin:30px 0 0 0; background:red;
+        border:none;}
+        .id-password {width:400px; height:20px; margin:10px 0 0 0;}
+        #checkbox {width:15px; height:15px;}
+        .id-password > p {float:right;}
+        .id-password > p > a {text-decoration:none; color:#000;}
+
+        .nextlogin {width:400px; height:110px;  margin:20px 0 0 0;}
+        .nextlogin > span {font-size:18px; font-weight:bold; display:block;}
+        .nextlogin > ul {width:400px; height:80px; margin:20px 0 0 0;}
+        .nextlogin > ul > li {float:left; }
+        .nextlogin > ul > li > a > img {width:60px; height:60px; border-radius:50%; margin:0 15px 0 0;}
+
+
+
+        #memberlogin2 {width:450px; height:500px; float:right;  margin:0 0px 0 0;}
+        #memberlogin2 > span {display:block; font-size:25px; font-weight:bold; margin:20px 0 20px 0;}
+        #memberlogin2 > form {width:400px; height:30px; margin:20px 0 20px 0; }
+        #memberlogin2 > form > input {margin:5px 10px 0 0;}
+
+        .number {width:400px; height:150px;}
+        #order1 {width:400px; height:55px; margin:0 0 10px 0; color:#3a3636; border:1px solid rgb(165, 154, 154);}
+        #order2 {width:400px; height:55px; margin:0 0 10px 0; color:#3a3636; border:1px solid rgb(165, 154, 154);}
+
+        #memberlogin2 > button {width:400px; height:65px; background-color:rgb(85, 78, 78); color:white;
+        font-weight:bold; cursor:pointer; border:none;}
+
+        .new {width:400px; height:80px; margin:40px 0 0 0;}
+        .new > p {display:block; color:red; font-size:13px; font-weight:600;}
+        .new > button {width:400px; height:70px; margin:15px 0 0 0; border:1px solid red; background:white; font-size:18px; font-weight:bold; color:red; cursor:pointer;}

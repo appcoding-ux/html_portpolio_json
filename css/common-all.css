@@ -1,0 +1,172 @@
+@charset "utf-8";      
+
+        * {margin:0; box-sizing: border-box;}
+        ul, li, ol {list-style:none; margin:0; padding:0;}
+        
+        /*헤더*/
+        header { width: 100%; height: 152px; margin: 0 auto;}
+        #headertop { width:1240px;height:95px; margin:0 auto; }
+        
+        /*로고*/
+        #logo {width: 210px;height: 48px;float: left; margin: 30px 0 30px 0; }
+        #logo > a > img { width: 190px;height: 48px;}
+        
+        /*검색*/
+        #search  {width: 420px;height: 48px; border-radius: 20px;  margin: 30px 0 30px 0; float: left; }
+        #search > button { width: 28px; height: 28px; border-radius:60%; border:none; margin:10px 0 0 0; cursor:pointer;} 
+        #search > button > img { width: 28px; height: 28px;}
+        #search > input {float: left; margin: 10px 0 0 2px; border-radius:30px; height:30px; width:200px;
+        border:1px solid rgb(100, 111, 124);}
+        
+        /*카테고리, 쇼핑*/
+        #category { width: 70px;height: 55px;float: left; margin: 30px 0 0 460px;text-align: center; }
+        #category > a > img { width: 36px;height: 36px; margin:3px 0 0 0; }
+        #showping {width: 50px; height: 55px;float: right; margin: 30px 30px 0 0;text-align: center; }
+        #showping > a > img { width: 36px; height: 36px;margin: 5px 0 0 0; }
+        
+        /*라인*/
+        #line { width: 100%; height: 1px; background-color:rgba(47, 47, 47); }
+        
+        /*헤드 바텀*/
+        #headerbottom {width:1240px; height:56px; margin:1px auto; }
+        #headerbottom > nav {width:400px; height:56px; }
+        #headerbottom > nav > ul {width:100%; height:100%;display:flex; justify-content:space-evenly;}
+        #headerbottom > nav > ul > li {font-weight:bold;}
+        #headerbottom > nav > ul > li > a {text-decoration:none; color:#000; font-size:17px; font-weight:bold;}
+        #headerbottom > nav > ul > li > a:hover {color:tomato;}
+
+        /*네비게이션 헤드*/
+        .navhead {cursor:pointer;}
+        .navhead > img {width:24px; height:24px; float:left; cursor:pointer;}
+        #menu {float:left;margin:3px 10px 0 0; font-weight:bold; color:#000; cursor:pointer; width:70px; position:relative;}
+        #category-main {display:none; background-color:rgb(255, 255, 255); height:700px; box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; z-index:1000; width:170px; position:absolute; left:-20px; top:41px;}
+        #category-main > li {height:55px; padding:5px 0px; font-size:15px; line-height:20px; display:flex; align-items:center; position:relative; color:#2f2f2f;}
+        #category-main > li:hover {color:tomato;}
+        #category-main > li > img {width:50px; height:37.5px;}
+        #category-main > li > .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+        #category-main > li:hover > .arrow {display:inline-block;}
+
+        /* 카테고리 하나로 합치기 */
+        .categoryParent {width:190px; height:700px; display:none; position:absolute; top:0px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+
+        .categoryParent > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+
+        .categoryParent > li:hover {color: tomato;}
+
+        .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+
+        .categoryParent > li:hover > .arrow {display:inline-block;}
+        
+        /* 자식들 */
+        .categoryChild {width:190px; height:700px; display:none; position:absolute; top:0px; left:170px; z-index:3;  background-color:rgb(255, 255, 255);box-shadow: rgba(66, 66, 66, 0.06) 0px 6px 10px 0px; padding:7px 0 0 0;}
+
+        .categoryChild > li {height:55px; padding:5px 0px; font-size:14px; line-height:20px; color:#2f2f2f; display:flex; align-items:center; position:relative; padding:8px 0 8px 10px; }
+
+        .categoryChild > li:hover {color: tomato;}
+
+        .arrow {width:8px; height:16px; margin-left:auto; margin-right:16px; display:none;}
+
+        .categoryChild > li:hover > .arrow {display:inline-block;}
+
+        /* 각각의 메뉴들 위로 or 왼쪽으로 이동시키기 */
+        .pabric {top:-55px;} .jubang {top:-110px;} .sunab {top:-165px;} .sanghal {top:-220px;} .jomung {top:-275px;} .interia {top:-330px;} .gajeon {top:-385px;} .digital {top:-440px;} .camping{top:-495px;} .animal{top:-550px;} .diy {top:-605px;}
+
+        /* 세로길이 -7px         1*/
+        .chimda-and-matris, .chimda, .gajuksopa, .makeuptable, .sictac, .booktable, .chimgu, .chimguset, .sicgi, .homeset, .indogseon, .ribingbox, .clean, .clock, .pictureposter, .designmungu, .artificialflower, .winter, .mobile, .dog {position:absolute; left:190px; top:-7px;}
+
+        /* 세로길이 -62px         2*/
+        .sopa,.pabricsopa, .matris, .mirror, .dress-hanger, .chimgudanpum, .curtain-and-bilnd, .sujeo, .hanger, .setac, .homegallery, .pabricposter, .deskthing, .bamboo, .cleargajeon, .cat {position:absolute; left:190px; top:-62px;}
+
+        /* 세로길이 -117px         3*/
+        .sinsojasopa, .table, .narrowtable, .blanket, .carpet, .cup, .frontdoor, .bathroom, .aroma, .case, .manyflower, .kitchengajeon, .notebook{position:absolute; left:190px; top:-117px;}
+
+        /* 세로길이 -172px         4*/
+        .makeup, .backcover, .props, .nambi, .makeuptower, .life, .skyjomung, .mobil, .flowerpot, .lifegajeon, .floor {position:absolute; left:190px; top:-172px;}
+
+        /* 세로길이 -227px         5*/
+        .dress, .bodyfilrow, .jori, .sopu, .beauty, .sopum{position:absolute; left:190px; top:-227px;}
+
+        /* 세로길이 -282px         6*/
+        .room-master, .sunban, .boghan, .daily, .crismas, .video {position:absolute; left:190px; top:-282px;}
+
+        /* 세로길이 -337px         7*/
+        .kitchen, .sicgitower, .desk, .summer {position:absolute; left:190px; top:-337px;}
+
+        /* 세로길이 -392px         8*/
+        .study, .kitchenstorage, .plants {position:absolute; left:190px; top:-392px;}
+
+        /* 세로길이 -447px         9*/
+        .chair, .goods, .jeongu {position:absolute; left:190px; top:-447px;}
+
+        /* 세로길이 -502px         10*/
+        .baby {position:absolute; left:190px; top:-502px;}
+
+        /* 카테고리 옆 메뉴들 */
+        .slash {width:1px; height:16px; float:left; margin:0px 20px 0 10px; text-align:center;}
+        #headerright {width:310px; height:54px; float:right; margin:-57px 0px 0 0px;}
+        
+        .headerright1 {width:100px; height:38px; background: linear-gradient(0deg, rgb(83, 91, 99), rgb(83, 91, 99)), linear-gradient(rgb(248, 106, 69) 0%, rgb(255, 104, 142) 100%);; float:left; margin:10px 1px 0 0; border-radius:20px;}
+        .headerright1 > span {font-size:13px; color:rgb(255, 255, 255); font-weight:700; font-style:normal; text-align:center; display:block;
+        margin:10px 0 0 0;}
+        
+        .headerright2 {width:115px; height:20px;  float:left; margin:0 1px 0 0; }
+        .headerright2 > span {display:block; font-size:14px; font-weight:bold; font-style:normal; color:rgb(24, 29, 31); margin:20px 0 0 10px;}
+        
+        .headerright3 {width:70px; height:20px; float:left; margin:0 1px 0 0;}
+        .headerright3 > span {display:block; font-size:14px; font-weight:bold; font-style:normal; color:rgb(24, 29, 31); margin:20px 0 0 10px;}
+
+        
+
+
+        /*푸터*/
+        footer {width: 100%; height: 472px; margin: 0 auto; background: rgb(247, 248, 249);}
+        
+        /*푸터 라인 1*/
+        #footerline1 {width:100%; height:1px; background-color:rgba(51, 60, 69);}
+        
+        /*푸터 1*/
+        #footer1 {width:1240px; height:197px; padding:14px 0 0 0px; margin:0 auto; }
+        /*푸터 1 바텀*/
+        #footerbottom {width:1240px; height:183px; }
+        /*푸터 1 바텀 레프트*/
+        #footerbottom1 {width:372px; height:183px; float:left;}
+        .footerspan1 > span {font-size:17px; color:rgb(24, 29, 31); font-weight:bold; line-height:48px;}
+        .footerbottom1 > span {color:rgb(83, 91, 99); font-size:14px; font-weight:normal; line-height:27px;}
+        
+        /*푸터 1 바텀 센터*/
+        #footerbottom2 {width:372px; height:183px; float:left; }
+        .footerspan2 > span {color:rgb(24, 29, 31); font-size:17px; font-weight:bold; line-height:48px;}
+        .phone > span {display:inline-block; overflow:initial; color:rgb(24, 29, 31); font-size:36px; font-weight:normal; font-style:normal; line-height:50px; text-align:inherit;}
+        .footerbottom2-span > span {color:rgb(83, 91, 99); font-size:14px; font-weight:normal; line-height:26px;}
+        
+        /*푸터 1 바텀 라이트*/
+        #footerbottom3 {width:40%; height:48px; float:left; }
+        #footerbottom3 > a > img{width:32px; height:32px; margin:0px 8px; border-radius:20px; background-color:rgba(137, 143, 148); transition:all 0.3s sase 0s; float:right;}
+        
+        /*푸터 라인 2*/
+        #footerline2 {width:100%; height:1px; background-color:rgba(51, 60, 69); margin:28px 0 30px 0px;}
+        
+        /*푸터2*/
+        #footer2 {width:1240px; height:165px; margin:0 auto;}
+        
+        /*푸터2바텀1*/
+        #footer2bottom1 {width:1240px; height:15px; }
+        
+        .footer2bottom {width:60px; height:15px; border-right:1px solid rgb(51, 60, 69); float:left; margin:0 10px 0 0;}
+        .footer2bottom:nth-child(4) {width:120px; height:12px;  border-right:1px solid rgb(51, 60, 69); float:left;}
+        .footer2bottom > span > a { font-size:13px; line-height:18px; color:rgb(24, 29, 31); font-weight:bold; text-decoration:none;
+        display:inline-block; margin:-3px 0 0 0;}
+        
+        /*푸터2바텀2*/
+        #footer2bottom2 {width:1240px; height:75px;  display:flex; margin:14px 0 0; }
+        #footer2bottom2 > span {width:600px; height:75px; float:left; font-size:14px; color:rgba(83, 91, 99);}
+        
+        /*푸터2바텀3*/
+        #footer2bottom3 {width:1240px; height:24px; margin:10px 0 30px;  display:flex;}
+        #footer2bottom3img > a > img {width:24px; height:24px; float:left; margin:0 10px 0 0;}
+        
+        #footer2bottom3 > p {color:rgb(83, 91, 99); font-size:14px; font-weight:normal; line-height:24px; margin:0 0 0 10px;}
+        
+        /*푸터3*/
+        #footer3 {width:100%; height:50px; background-color:rgba(24, 29, 31);; overflow:hidden; padding:15px 0 17px; display:flex;}
+        #footer3 > span {color: rgb(197, 200, 206); font-size: 13px; line-height: 18px; white-space: nowrap; margin: 0px 50px 0px 0px;}

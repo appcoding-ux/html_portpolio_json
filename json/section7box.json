@@ -1,0 +1,36 @@
+[{
+	"url" : "sns-img1.jpg",
+	"title" : "집드리",
+	"subtitle" : "[해외]무중력 자기부상 공중회전 UFO블...",
+	"persent" : "24%",
+	"price" : "129,900원",
+	"button" : "특가",
+	"subbutton" : "무료배송"
+
+}, {
+	"url" : "sns-img2.jpg",
+	"title" : "슬로우랩",
+	"subtitle" : "[1+1]매직멀티 청소티슈(총 360매)",
+	"persent" : "77%",
+	"price" : "13,900원",
+	"button" : "특가",
+	"subbutton" : "무료배송"
+
+}, {
+	"url" : "sns-img3.jpg",
+	"title" : "바나나빌딩",
+	"subtitle" : "원터치 접이식 철제 폴딩 선반",
+	"persent" : "60%",
+	"price" : "29,000원",
+	"button" : "",
+	"subbutton" : ""
+
+}, {
+	"url" : "sns-img4.jpg",
+	"title" : "로얄푸드",
+	"subtitle" : "그옐 2인 데일리 그릇세트 12P 외 2종",
+	"persent" : "89%",
+	"price" : "19,900원",
+	"button" : "특가",
+	"subbutton" : ""
+}]

@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+        * {margin:0; box-sizing: border-box;}
+        ul, li, ol {list-style:none; margin:0; padding:0; }
+        
+        
+        /*슬라이더*/
+        #slider { width: 100%; height: 400px; margin: 0 auto; background-image:url("https://cdn.ggumim.co.kr/promotion/1442075f-8a68-4ee1-bf37-dde1078c4009.png"); background-size:cover; background-position:center;}
+        
+        
+        /*섹션*/
+        section {width: 100%;height: 3372px; margin: 0 auto; }
+        
+        /*섹션1*/
+        #section1 {position: relative; width: 1240px;  height: 128px; margin: -60px auto 0px; border-radius: 26px; background-color:white;}
+        
+        /*섹션1레프트*/
+        #section1left { width:590px; height:109px; display: flex; margin: 19px 31px 0px 20px; float:left; }
+        /*섹션1레프트 쇼핑*/
+        .showpping {width: 80px; height: 70px; float:left; margin:10px 20px 10px 25px; text-align:center; border-radius:50%;}
+        .showpping > a > img {width:63px; height:65px; border-radius:50%;}
+        .showpping > span {display:block; text-align:center; margin:5px 0 0 0;}
+        
+        /*섹션1레프트 인기상품*/
+        .popular {width: 80px; height: 70px; float:left; margin:10px 20px 10px 25px;  text-align:center; border-radius:50%;}
+        .popular > a > img {width:63px; height:65px; border-radius:50%;}
+        .popular > span {display:block; text-align:center; margin:5px 0 0 0;}
+        
+        /*섹션1레프트 집들이*/
+        .house {width: 80px; height: 70px; float:left; margin:10px 20px 10px 25px;  text-align:center; border-radius:50%;}
+        .house > a > img {width:63px; height:65px; border-radius:50%;}
+        .house > span {display:block; text-align:center; margin:5px 0 0 0;}
+        
+        /*섹션1레프트 사진*/
+        .picture {width: 80px; height: 70px; float:left; margin:10px 20px 10px 25px; text-align:center; border-radius:50%;}
+        .picture > a > img {width:63px; height:65px; border-radius:50%;}
+        .picture > span {display:block; text-align:center; margin:5px 0 0 0;}
+        
+        /*섹션1레프트 티브이*/
+        .tv {width: 80px; height: 70px; float:left; margin:10px 20px 10px 25px; text-align:center; border-radius:50%;}
+        .tv > a >img {width:63px; height:65px; border-radius:50%;}
+        .tv > span {display:block; text-align:center; margin:5px 0 0 0;}
+
+        /*섹션1센터*/
+        #section1center {background-color:rgba(197,200, 206); display: flex; width:2px;height: 80px;margin: 29px 0px 0px; float:left; color:rgb(197, 200, 206);}
+        
+        /*섹션1라이트*/
+        #section1right {display: flex; width:560px; height:128px; float:right;  float:right; margin:0 20px 0 0;}
+        #section1right > h4 { font-size:20px; margin:35px 0 20px 20px;}
+        #section1right > span {float:left; font-size:20px;}
+        #section1right > button {width:150px; height:40px; background-color:tomato; color:white; margin:65px 0 20px 150px; border-radius:20px; border:0; cursor:pointer;}
+        
+        /*섹션2*/    
+        #section2 {width:100%; height:730px; padding: 124px 0px 50px; margin: -68px 0px 0px;background: linear-gradient(rgb(238, 241, 245) -28.1%, rgb(243, 245, 251) 132.46%);}
+        
+        /*센션2탑*/
+        #section2top {width:1240px; height:40px; margin:0 auto;}
+        #section2top > span {font-size:26px;}
+        #section2top > button {width:102px; height:40px; float:right; border-radius:20px; border:1.5px solid rgb(197, 200, 206); color: black; cursor: pointer;}
+        
+        /*섹션2센터*/
+        #section2center {width:1240px; height:23px;  margin:0 auto;}
+        #section2center > span {font-size:17px; color:rgb(100, 111, 124);}
+        
+        /*센션2바텀*/
+        #section2bottom {width:1240px; height:490px; margin:0 auto; border-radius:10px; background-color:white;}
+        .iconbox1 {width:290px; height:450px; float:left; margin:10px; 
+        border-radius:10px;}
+        .iconbox1:hover {box-shadow: 2px 2px 8px rgb(100 111 124 / 50%);}
+        .iconbox1 > p {color:rgba(137, 143, 148); font-size:13px; font-weight:normal; text-align:inherit;margin:10px 0 10px 10px;}
+        .iconbox1 > span {color: black;font-size: 14px;font-weight: 500;line-height: 22px;max-height: 40px; overflow-wrap: normal;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;text-overflow: ellipsis;word-break: break-all; margin: 10px;}
+        .persentspan > span {font-size:26px; color:rgb(249, 9, 71); font-weight:700; line-height:22px; display:inline-block; float:left; margin:0 0 0 10px;}
+        .priceblack > span {display: inline-block; color:black; font-size:20px; font-weight:700; line-height:22px; margin:0 0 0 10px;}
+
+
+        .iconbox1 > button {margin:15px 6px 0 13px; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px; border:0; color:rgb(249, 9, 71, 0.75);}
+        .iconbox1 > .free {margin:15px 6px 0 0; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px;
+        border:0; color:rgb(83, 91, 99);}
+
+        /*투데이특가 이미지 1*/
+        .iconbox1:first-child div:first-of-type {width:290px; height:274px; background-image:url("https://cdn.ggumim.co.kr/cache/furniture/600/20190222102150TkIFy6mxNA.jpg"); background-size:cover; background-position:center center; border-radius:10px;}
+        
+        /*투데이특가 이미지 2*/
+        .iconbox1:nth-child(2) div:first-of-type{width:290px; height:274px; background-image:url("https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165353202279509550.jpg?gif=1&w=850&h=850&c=c&webp=1"); background-size:cover; background-position:center center; border-radius:10px;}
+        
+
+        /*투데이특가 이미지 3*/
+        .iconbox1:nth-child(3) div:first-of-type {width:290px; height:274px; background-image:url("https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/167540624171440538.gif?gif=1&w=640&h=640&c=c&webp=1"); background-size:cover; background-position:center center; border-radius:10px;}
+        
+        /*투데이특가 이미지 4*/
+        .iconbox1:last-child div:first-of-type {width:290px; height:274px; background-image:url("https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/images/164479906088657143.jpg?gif=1&w=850&h=850&c=c&webp=1"); background-size:cover; background-position:center center; border-radius:10px;}
+        
+        /*투데이특가 span*/
+        .background-image-today > span {display:inline-block; padding:6px 9px; border:1px solid rgba(225, 225, 225,0.4); border-radius:18px; font-size:12px; font-weight:500; background: rgba(0, 0, 0, 0.4); color:rgb(255, 255, 255); margin:233px 0 0 10px;}
+        
+        
+        /*섹션3*/
+        #section3 {display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; width: 100%; min-width: 1400px; height: auto; padding:50px 0px 59px; }
+        
+        /*섹션3탑*/
+        #section3top {width:1240px; height:40px; margin:0 auto; padding:0 0 20px 0;}
+        #section3top > span {font-size:26px; color:rgb(24, 29, 31);}
+        /*섹션3바텀*/
+        #section3bottom {width:1440px; height:171px; margin:0 auto; padding:0;}
+        #iconbox2 {width:1240px; height:130px; margin:20px auto 0px;}
+        .iconbox2 {width:90px; height:120px; float:left; margin:10px 20px 0 10px;}
+        .iconbox2 > a > img {width:90px; height:90px; margin:0 auto; background-color:rgb(232, 239, 250);border-radius:50%;}
+        .iconbox2 > span {text-align:center; font-size:16px; color:black; display:block;  font-weight:bold; margin:10px 0 0 0;}
+        
+        /*섹션3인테리어소품*/
+        #iconboxsopum {width:100px; height:120px; float:left; margin:10px 20px 0 10px;}
+        #iconboxsopum > a > img {width:100px; height:90px; margin:0 auto; background-color:rgb(232, 239, 250);border-radius:50%;}
+        #iconboxsopum > span {text-align:center; font-size:16px; color:black; display:block; font-weight:bold; margin:10px 0 0}
+        
+        /*섹션4*/
+        #section4 {width:100%; height:526px; text-align:center; background: linear-gradient(rgb(230, 195, 218) -30.1%, rgba(226, 224, 193, 0.979)120.46%);} 
+        
+        /*섹션4센터*/
+        #section4center {width:1240px; height:436px; display:inline-block; margin:45px;}
+        .section4box {width:295px; height:436px; background-color:white; float:left; margin:0 10px 0 5px; border-radius:10px; cursor:pointer;}
+        /*섹션4박스 레프트*/
+        .section4box-left {width:295px; height:436px; background-color:(rgb(230, 195, 218) -30.1%, rgba(226, 224, 193, 0.979)120.46%); 
+        float:left; margin:0 10px 0 5px; border-radius:10px; cursor:pointer;}
+        .span-left-top > span {display:block; float:left; color:white; margin:30px 0 0 0; font-size:12px; padding:3px;}
+        .section4box-left > span {display:block; text-align:left; margin:70px 0 0 0;  color:white; font-size:23px;}
+        .section4box-left > p {display:block; text-align:left; margin:30px 0 0 0; color:white; font-size:12px; }
+        .section4box-left > button {display:block; text-align:center; margin:50px 0 0 0; width:188px; height:46px;
+        font-size:16px; color:white; background-color:rgba(201, 150, 175, 0.5); border:1px solid white;}
+        
+        /*섹션4박스2*/
+        .section4box > p {font-size:13px; color:rgba(137, 143, 148); font-weight:500; font-style:normal; line-height:12px; text-align:left; display:block; margin:10px 0 0 25px;}
+        .section4box > span {font-size:16px; color:rgb(51, 60, 69); font-weight:500; font-style:normal; line-height:17px; display:block; margin:10px 0 0 25px; text-align:left;}
+
+        .background-image-smart-persent {font-size:21px; color:rgb(249, 9, 71); font-weight:700; line-height:21px; display:inline-block;  margin:0px 0 0 -100px;}
+        .section4box:nth-child(2) div:nth-of-type(2) {margin:0 0 0 -80px;}
+        .background-image-smart-priceblack {display: inline-block; color:black; font-size:21px; font-weight:700; line-height:21px; margin:15px 0 0 0px;}
+        .background-image-smart-button {width:52px; height:22px; cursor: pointer; margin:10px 0 0 20px;}
+        .background-image-smart-button > button {border-radius: 3px; background: rgb(241, 243, 246);font-weight:700; font-size:10px; color: rgb(83, 91, 99);; border:0; padding:4px 6px;}
+        
+
+        .section4box:nth-child(2) div:first-of-type {width:295px; height:290px; background-image:url("https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_3692722%2F36927229582.jpg&type=sc960_832"); background-size:cover; background-position:center center; border-radius:10px;}
+        
+        .section4box:nth-child(3) div:first-of-type {width:295px; height:290px; background-image:url("https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20221207_151%2F1670384377137NgtTP_JPEG%2F71520156859634866_158118351.jpg&type=sc960_832"); background-size:cover; background-position:center center; border-radius:10px;}
+        
+        .section4box:last-child div:first-of-type {width:295px; height:290px; background-image:url("https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_2619813%2F26198139906.jpg&type=sc960_832"); background-size:cover; background-position:center center; border-radius:10px;}
+
+        
+        
+        /*섹션5*/
+        #section5 {width:100%; height:588px; display:block; padding:50px 0;}
+        
+        /*섹션5탑*/
+        #section5top {width:1240px; height:40px;  margin:24px auto 0px;}
+        #section5top > span {width:360px; height:40px; font-size:26px; color:rgb(24, 29, 31); font-weight:bold; }
+        #section5top > button {width:82px; height:30px; border-radius:16px; border:none; text-align:center; font-size:1rem; background: linear-gradient(rgb(247, 106, 66) 0%, rgb(255, 103, 145) 100%); color:white; font-weight:bold;}
+        
+        /*섹션5바텀*/
+        #section5bottom {width:1240px; height:425px; margin:0 auto;}
+        .section5box {width:295px; height:425px;  margin:5px; float:left; }
+        .background-image-popup-img {width:295px; height:295px; overflow:hidden; margin:10px 0 0 0; border-radius:6px;}
+        
+        .background-image-popup-img > a > img {width:293px; height:293px; border: 1px solid rgb(233, 235, 238); position:relative; border-radius:6px; transform:scale(1); transition:all 0.2s ease-in-out 0s;}
+        .background-image-popup-img > a > img:hover {transform:scale(1.15);}
+
+        .section5box > p {color:rgba(137, 143, 148); font-size:13px; font-weight:normal; text-align:inherit;margin:10px 0 0px 10px;}
+        .section5box > span {color: black;font-size: 14px;font-weight: 500;line-height: 22px;max-height: 40px; overflow-wrap: normal;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;text-overflow: ellipsis;word-break: break-all; margin:0 0 0 10px;}
+
+        .persentspan > span {font-size:26px; color:rgb(249, 9, 71); font-weight:700; line-height:22px; display:inline-block; float:left; margin:0 0 0 10px;}
+        .priceblack > span {display: inline-block; color:black; font-size:20px; font-weight:700; line-height:22px; margin:0 0 0 10px;}
+        
+        .popup-button {margin:15px 6px 0 13px; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px; border:0; color:rgb(249, 9, 71, 0.75);}
+        .popup-free {margin:15px 6px 0 0; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px;
+        border:0; color:rgb(83, 91, 99);} 
+
+        
+        /*섹션6*/
+        #section6 {width:100%; height:588px;  display:block; padding:50px 0 50px 0;}
+        
+        /*섹션6탑*/
+        #section6top {width:1240px; height:40px; margin:24px auto 0px;}
+        #section6top > span {width:360px; height:40px; font-size:26px; color:rgb(24, 29, 31); font-weight:700;}
+        #section6top > button {width:82px; height:33px; border-radius:16px; border:none; text-align:center; font-size:1rem; background: linear-gradient(rgb(90, 195, 205) 0%, rgb(88, 205, 142) 100%); color:white; font-weight:bold;}
+        
+        /*섹션6바텀*/
+        #section6bottom {width:1240px;height:425px;  margin:0 auto; overflow:hidden;}
+        .section6box {width:295px; height:425px;  margin:5px; float:left; }
+        .background-image-popup2-img {width:295px; height:295px; overflow:hidden;}
+
+        .background-image-popup2-img > a > img {width:295px; height:295px; border: 1px solid rgb(233, 235, 238); position:relative; border-radius:6px; transform:scale(1); transition:all 0.2s ease-in-out 0s;}
+        .background-image-popup2-img > a > img:hover {transform:scale(1.15);}
+
+
+        .section6box > p {color:rgba(137, 143, 148); font-size:13px; font-weight:normal; text-align:inherit;margin:10px 0 0px 10px;}
+        .section6box > span {color: black;font-size: 14px;font-weight: 500;line-height: 22px;max-height: 40px; overflow-wrap: normal;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;text-overflow: ellipsis;word-break: break-all; margin:0 0 0 10px;}
+
+        .popup2-button {margin:15px 6px 0 13px; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px; border:0; color:rgb(249, 9, 71, 0.75);}
+        .popup2-free {margin:15px 6px 0 -18px; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px;
+        border:0; color:rgb(83, 91, 99);}
+        
+        
+        /*섹션7*/
+        #section7 {width:100%; height:588px; display:block; padding:50px 0 0 0;}
+        
+        /*섹션7탑*/
+        #section7top {width:1240px; height:40px; margin:24px auto 0px;}
+        #section7top > span {width:360px; height:40px; font-size:26px; color:rgb(24, 29, 31); font-weight:700;}
+        
+        /*섹션7바텀*/
+        #section7bottom {width:1240px; height:425px;  margin:0 auto;}
+        .section7box {width:295px; height:425px; float:left; margin:5px; overflow:hidden;}
+        .background-image-sns-img {width:295px; height:295px; overflow:hidden;}
+
+        .background-image-sns-img > a > img {width:295px; height:295px; border: 1px solid rgb(233, 235, 238); position:relative; border-radius:6px; transform:scale(1); transition:all 0.2s ease-in-out 0s;}
+        .background-image-sns-img > a > img:hover {transform:scale(1.15);}
+
+
+        .section7box > p {color:rgba(137, 143, 148); font-size:13px; font-weight:normal; text-align:inherit;margin:10px 0 0px 10px;}
+        .section7box > span {color: black;font-size: 14px;font-weight: 500;line-height: 22px;max-height: 40px; overflow-wrap: normal;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;text-overflow: ellipsis;word-break: break-all; margin:0 0 0 10px;}
+
+        .sns-button {margin:15px 6px 0 13px; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px; border:0; color:rgb(249, 9, 71, 0.75);}
+        .sns-free {margin:15px 6px 0 0; font-size:15px; font-weight:normal; background-color:rgb(241, 243, 246); cursor:pointer; text-align:center; border-radius:5px; border:0; color:rgb(83, 91, 99);}
